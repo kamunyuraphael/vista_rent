@@ -1,0 +1,12 @@
+{
+  "name": "vista_rent",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "install-all": "concurrently \"npm install --prefix server\" \"npm install --prefix app\"",
+    "dev": "concurrently \"npm run dev --prefix server\" \"npm run dev --prefix app\""
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.3"
+  }
+}

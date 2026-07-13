@@ -14,7 +14,7 @@ const JWT_SECRET = process.env.JWT_SECRET;
 const CLIENT_ORIGIN = process.env.CLIENT_ORIGIN ?? "http://localhost:5173";
 
 if (!JWT_SECRET) {
-  console.error("[startup] JWT_SECRET is not set. Copy .env.example to .env and fill it in.");
+  console.error("[startup] JWT_SECRET is not set.");
   process.exit(1);
 }
 
@@ -26,6 +26,10 @@ async function main() {
   app.use(express.json());
 
   app.get("/api/health", (_req, res) => res.json({ status: "ok" }));
+  // Base route health check
+  app.get('/', (req, res) => {
+    res.json({ status: "success", message: "Vista Rent API is running smoothly!" });
+  });
 
   app.use("/api/vehicles", vehiclesRouter);
   app.use("/api/faqs", faqsRouter);

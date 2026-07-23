@@ -157,7 +157,7 @@ const testimonials = [
 ];
 
 async function seed() {
-  const uri = process.env.MONGODB_URI ?? "mongodb://127.0.0.1:27017/vistarent";
+  const uri = process.env.MONGODB_URI ?? "mongodb://127.0.0.1:27017/vista_rent";
   await connectDB(uri);
 
   console.log("[seed] clearing existing vehicles, faqs, testimonials...");

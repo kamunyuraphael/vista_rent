@@ -1,0 +1,46 @@
+5.8. CHAPTER ONE
+Chapter one should be between a Minimum of 2 pages and Maximum of 3 pages and consist of
+the following sections
+i. Introduction: Introduction of the project area; How it operates and how the problem exists
+ii. Background of the Study – is a minimum of ½ page and maximum of 1 page
+a. This is usually a detailed background information about the project/ research area
+and about the client. It should be clear on what business the client is involved in
+and how operations are currently conducted.
+iii. Problem Statement(s)
+a. This is a statement of the problem the project is intended to address. It should clearly
+show the problem in the light of the project research and its contribution to the
+solution. Ideally it should originate from the way the organization currently
+performs its functions. Each problem should be stated clearly with a brief
+explanation on how it arises from the functions be undertaken.
+iv. Objectives: -
+Clear, concise “SMART” objectives should be provided including project/ research and
+system development related objectives.
+(S - Specific, M - Measurable, A - Achievable, R- Realistic/Relevant, T- Time bound/boxed.
+The supervisor should guide the student on the minimum and maximum number of
+objectives as per his/her project. Key words like Investigate, develop and analyze should be
+used to list objectives
+v. Scope and Limitation of the Study – a brief description of the project scope – what
+was covered and what was not and why?.
+vi. Justification;- student should justify their project by indicating the interestingness and
+challenge that the project presents, the timeliness of the idea, the possible advantages
+that realization of such a project would bring.
+vii. Project Risk and Mitigation;- This section should contain a list of project risks and the
+mitigations to these risks.
+viii. Budget and Resources;-This should generally address all the envisaged resources that will
+enable the development of the system to succeed. The key items are hardware, software,
+human and any other costs that will be incurred.
+ix. Project Schedule:- a brief description of the project work break down structure. Project
+Gantt and Network diagram clear showing the Critical path should be included in the
+appendix section
+5.11. CHAPTER FOUR: SYSTEM ANALYSIS AND REQUIREMENT MODELING
+This is a Minimum of 8 pages and Maximum of 10 pages.
+The chapter should address at least the following areas:-
+• Description on how the current system works using system analysis modelling tools such as
+flow charts, DFDs, Use cases, UML etc.
+• How the facts and the data gathered including the methods used
+• Requirement definitions and modelling of the Current
+• Requirement definitions and specifications of the project
+5.12. CHAPTER FIVE: SYSTEM DESIGN
+This is a minimum of 7 and Maximum of 10 pages.
+This section should consist of a description of the system design, database design (conceptual,
+logical and physical) using an appropriate modelling too

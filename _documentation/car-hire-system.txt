@@ -1,0 +1,63 @@
+To turn this into a premium web application, we should push past basic booking CRUD operations and introduce features like automated security deposits, digital inspection checklists, live analytics, and telematics integration.
+
+Here is a comprehensive feature blueprint for the MERN + TypeScript application:
+
+---
+
+## 1. Customer-Facing Portal
+
+This interface focuses on reducing friction, offering clear vehicle data, and making the checkout pipeline as fast and intuitive as possible.
+
+### 🔍 Search, Discovery & Discovery Engine
+
+* **Dynamic Inventory Filter:** Search by dates, vehicle type (SUV, Saloon, etc.), seating capacity (5-seater vs. 7-seater), engine capacity (CC), and transmission (Manual/Automatic).
+* **Availability Timeline:** If a specific car (like a *Prado*) is currently booked, show a mini-calendar on its detail page indicating exactly *when* it will be available next.
+* **Multi-Vehicle Comparison Tool:** Let users compare up to three vehicles side-by-side (e.g., comparing a *Noah* vs. *Voxy* on price, CC, and luggage capacity).
+
+### 📅 Booking & Custom Services Add-ons
+
+* **Flexible Destination Toggles:** A seamless radio selector changing rates instantly based on trip destination (*Within Nairobi* vs. *Outside Nairobi*).
+* **Value-Added Services (Add-ons):** * *Chauffeur Service:* Add a professional driver (flat daily rate).
+* *Child/Baby Car Seats:* Optional add-on per day.
+* *Extended Insurance Cover:* Excess waiver protection toggle.
+
+
+* **Time-Extended Extensions:** Allow clients to request a booking extension directly from their active dashboard if they run late returning the car.
+
+### 💳 Payments & Digital Identity (KYC)
+
+* **Split Payments / Security Deposit Management:** Charge the rental fee upfront while automatically placing a pre-authorized hold for a refundable security deposit.
+* **Integrated Mobile Money & Cards:** Direct integrations with regional payment APIs (like M-Pesa, Flutterwave, or Stripe).
+* **Document Vault:** Safe uploading and expiry-tracking for Driver's Licenses and Passports.
+
+---
+
+## 2. Admin Command Center
+
+This is the operational hub designed to give administrators 100% control over the fleet, risk mitigation, and financials.
+
+### 🗂️ Unified Fleet & Telematics Management
+
+* **Real-time Fleet Matrix:** A master dashboard displaying total assets divided into clear color-coded statuses: `Available` (Green), `Rented` (Blue), `In Maintenance` (Yellow), and `Overdue Return` (Red).
+* **Live Car Tracking (Telematics Simulation/Integration):** An interactive map view (using Google Maps or Mapbox API) tracking active rentals using simulated or real hardware GPS coordinates. Include **Geo-fencing alerts** that notify the admin if a car marked *Within Nairobi* crosses the boundary out of town.
+* **Digital Maintenance Logbook:** Track odometer readings, service history intervals, and upcoming oil changes for every car.
+
+### 👥 Customer & Booking Operations
+
+* **KYC Verification Queue:** A dedicated verification workspace for admins to approve or reject customer accounts based on document clarity.
+* **Live Rental Manifest:** View active rentals matched to specific customer detail cards (Name, Phone number, Destination, Emergency Contact).
+* **Digital Inspection Checklist:** A feature allowing admins to record pre-rental and post-rental vehicle damage (uploading photos of scratches/dents) before releasing or accepting a car back.
+
+### 📊 Business Intelligence & Reporting
+
+* **Financial Analytics:** Charts tracking gross revenue, earnings per vehicle category (e.g., *Are SUVs generating more revenue than Saloon cars?*), and outstanding dues.
+* **Utilization Rates:** Reports showing which cars are rented out the most versus which ones are sitting idle in the yard.
+
+---
+
+## 3. Shared/System Automation Features
+
+These features run in the background to ensure everything runs smoothly without manual intervention:
+
+* **Automated Notification Engine:** SMS and Email alerts sent via Twilio or SendGrid for booking confirmations, upcoming return reminders (e.g., *2 hours left to return vehicle*), and overdue alerts.
+* **Smart Overdue Calculator:** Automatically calculates late penalty fees hourly if a vehicle isn't returned within its designated grace period.

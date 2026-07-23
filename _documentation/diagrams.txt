@@ -1,0 +1,44 @@
+  +-----------------------------------+
+                     |            Client Layer            |
+                     |  [React Web App]  [Admin Portal]   |
+                     +-----------------------------------+
+                                       |
+                                       v HTTPS
+                     +-----------------------------------+
+                     |    Nginx (Reverse Proxy + TLS)     |
+                     |      Rate Limiting / CORS          |
+                     +-----------------------------------+
+                                       |
+                                       v
+                     +-----------------------------------+
+                     |   Express Node Cluster (PM2)       |
+                     |  Auth . KYC . Booking . Pricing     |
+                     +-----------------------------------+
+                        |         |          |         |
+             +----------+         |          |         +----------+
+             v                    v          v                    v
+     +---------------+   +--------------+ +---------------+ +--------------+
+     | Redis          |   | BullMQ Queue | | MongoDB Atlas | | Socket.io    |
+     | Session Locks  |   | - KYC verify | | Users/Fleet/  | | Admin live   |
+     +---------------+   | - SMS/Email  | | Bookings/Pay  | | notifications|
+                          | - Reconcile  | +---------------+ +--------------+
+                          +--------------+
+                                       |
+             +--------------------------+-------------------------+
+             v                         v                          v
+     +---------------+       +---------------+          +---------------+
+     | Cloudinary/S3  |       | M-Pesa Daraja |          | Africa's      |
+     | (signed URLs)  |       | + Stripe      |          | Talking (SMS) |
+     +---------------+       +---------------+          +---------------+
+
+                         +-------------------------+
+      Booking request     |                         |     Availability / confirmation
+  +----------------------->      RIDEKE SYSTEM       +----------------------->
+  |                       |      (Process 0)         |
+CUSTOMER                  +-----------+-------------+                       ADMINISTRATOR
+  |                                   |
+  | KYC documents                    | Booking / payment / fleet reports
+  |                                   v
+  +<----------------------  Verification status  ---------------------------+
+ 
+                    External: M-PESA DARAJA API  <----->  Payment request / callback

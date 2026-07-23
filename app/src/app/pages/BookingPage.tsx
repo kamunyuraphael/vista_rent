@@ -3,6 +3,7 @@ import { useParams, Link } from "react-router";
 import { Check, Loader2, ArrowLeft } from "lucide-react";
 import { ROUTES } from "../routes";
 import { fetchVehicle, createBooking, ApiError, type Booking } from "../lib/api";
+import { useAuth } from "../lib/auth-context";
 import type { Vehicle } from "../data/vehicles";
 import { SectionLabel } from "../components/common/SectionLabel";
 import { PrimaryBtn } from "../components/common/PrimaryBtn";
@@ -13,6 +14,7 @@ type LoadState = "loading" | "ready" | "not-found" | "offline";
 
 export function BookingPage() {
   const { vehicleId } = useParams<{ vehicleId: string }>();
+  const { user, token } = useAuth();
   const [vehicle, setVehicle] = useState<Vehicle | null>(null);
   const [loadState, setLoadState] = useState<LoadState>("loading");
 
@@ -25,6 +27,18 @@ export function BookingPage() {
     returnDate: "",
     notes: "",
   });
+
+  // Prefill contact details once we know who's signed in, without clobbering
+  // anything the person may have already started typing.
+  useEffect(() => {
+    if (!user) return;
+    setForm((f) => ({
+      ...f,
+      fullName: f.fullName || user.name,
+      email: f.email || user.email,
+    }));
+  }, [user]);
+
   const [submitting, setSubmitting] = useState(false);
   const [submitError, setSubmitError] = useState<string | null>(null);
   const [confirmed, setConfirmed] = useState<Booking | null>(null);
@@ -72,7 +86,7 @@ export function BookingPage() {
     setSubmitError(null);
 
     try {
-      const booking = await createBooking({ vehicleId: vehicle.id, ...form });
+      const booking = await createBooking({ vehicleId: vehicle.id, ...form }, token);
       setConfirmed(booking);
     } catch (err) {
       setSubmitError(err instanceof ApiError ? err.message : "Something went wrong. Please try again.");
@@ -133,6 +147,13 @@ export function BookingPage() {
         <Link to={ROUTES.fleet}>
           <PrimaryBtn>Browse More Vehicles</PrimaryBtn>
         </Link>
+        {user && (
+          <div className="mt-4">
+            <Link to={ROUTES.myBookings} className="text-sm text-primary font-semibold">
+              View in My Bookings
+            </Link>
+          </div>
+        )}
       </div>
     );
   }

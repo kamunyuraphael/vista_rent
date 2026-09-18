@@ -35,9 +35,9 @@ export function Nav() {
     <nav className="fixed top-0 left-0 right-0 z-50 border-b border-border bg-background/90 backdrop-blur-md">
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
         <Link to={ROUTES.home} className="flex items-center gap-2.5 cursor-pointer">
-          <div className="w-8 h-8 bg-primary rounded flex items-center justify-center">
+          {/*<div className="w-8 h-8 bg-primary rounded flex items-center justify-center">
             <span className="text-primary-foreground font-black text-sm" style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>V</span>
-          </div>
+          </div>*/}
           <span className="font-bold text-xl tracking-tight" style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>
             Vista<span className="text-primary">Rent</span>
           </span>

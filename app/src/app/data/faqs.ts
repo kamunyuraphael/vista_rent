@@ -30,7 +30,7 @@ export const faqs: Faq[] = [
   },
   {
     q: "Is insurance included in the rental rate?",
-    a: "Yes — comprehensive insurance cover is included in all rental rates. This covers third-party liability and own-damage. You may optionally purchase an excess waiver at pickup to reduce your exposure to zero.",
+    a: "Yes, comprehensive insurance cover is included in all rental rates. This covers third-party liability and own-damage. You may optionally purchase an excess waiver at pickup to reduce your exposure to zero.",
   },
   {
     q: "Can I drive the vehicle outside of Kenya?",

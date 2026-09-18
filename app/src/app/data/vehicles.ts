@@ -24,7 +24,7 @@ export const vehicles: Vehicle[] = [
     engine: "2700cc",
     luggage: "Large",
     badge: "Most Popular",
-    image: "https://images.unsplash.com/photo-1511919884226-fd3cad34687c?w=640&h=400&fit=crop&auto=format",
+    image: "https://res.cloudinary.com/iprdnhzp/image/upload/v1789742301/sarbjit-singh-_ehg0qg8p0Y-unsplash_dyckol.jpg",
   },
   {
     id: "v2",
@@ -36,7 +36,7 @@ export const vehicles: Vehicle[] = [
     engine: "2000cc",
     luggage: "Medium",
     badge: "Executive Pick",
-    image: "https://images.unsplash.com/photo-1563720223185-11003d516935?w=640&h=400&fit=crop&auto=format",
+    image: "https://res.cloudinary.com/iprdnhzp/image/upload/v1789742292/amine-ben-mohamed-SsjZkYx0rEM-unsplash_r8jyq2.jpg",
   },
   {
     id: "v3",
@@ -48,7 +48,7 @@ export const vehicles: Vehicle[] = [
     engine: "1800cc",
     luggage: "Medium",
     badge: null,
-    image: "https://images.unsplash.com/photo-1550355291-bbee04a92027?w=640&h=400&fit=crop&auto=format",
+    image: "https://res.cloudinary.com/iprdnhzp/image/upload/v1789742306/mohammad-fathollahi-ebXSlDQ-Vtc-unsplash_uvkptg.jpg",
   },
   {
     id: "v4",
@@ -60,7 +60,7 @@ export const vehicles: Vehicle[] = [
     engine: "3000cc",
     luggage: "Extra Large",
     badge: "Safari Ready",
-    image: "https://images.unsplash.com/photo-1519245659620-e859806a8d3b?w=640&h=400&fit=crop&auto=format",
+    image: "https://res.cloudinary.com/iprdnhzp/image/upload/v1789742754/haberdoedas-hF4bTmrQirQ-unsplash_1_fu6y9d.jpg",
   },
   {
     id: "v5",
@@ -72,7 +72,7 @@ export const vehicles: Vehicle[] = [
     engine: "2700cc",
     luggage: "Extra Large",
     badge: null,
-    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=640&h=400&fit=crop&auto=format",
+    image: "https://res.cloudinary.com/iprdnhzp/image/upload/v1789742306/jonas-gerlach-fRVxvA5169I-unsplash_kftnsx.jpg",
   },
   {
     id: "v6",
@@ -84,7 +84,7 @@ export const vehicles: Vehicle[] = [
     engine: "2500cc",
     luggage: "Medium",
     badge: "Premium",
-    image: "https://images.unsplash.com/photo-1555215695-3004980ad54e?w=640&h=400&fit=crop&auto=format",
+    image: "https://res.cloudinary.com/iprdnhzp/image/upload/chris-saran-iXHHhfwJD1E-unsplash_yvbqmy.jpg",
   },
   {
     id: "v7",
@@ -96,7 +96,7 @@ export const vehicles: Vehicle[] = [
     engine: "2000cc",
     luggage: "Large",
     badge: null,
-    image: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=640&h=400&fit=crop&auto=format",
+    image: "https://res.cloudinary.com/iprdnhzp/image/upload/v1789742306/jed-cobourn-rM22zNdvP_s-unsplash_ltawj0.jpg",
   },
   {
     id: "v8",
@@ -108,6 +108,6 @@ export const vehicles: Vehicle[] = [
     engine: "1800cc",
     luggage: "Large",
     badge: "Family Favourite",
-    image: "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=640&h=400&fit=crop&auto=format",
+    image: "https://res.cloudinary.com/iprdnhzp/image/upload/v1789742300/huy-phan-o2HKV9AA3oo-unsplash_wcw274.jpg",
   },
 ];

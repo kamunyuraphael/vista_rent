@@ -1,6 +1,6 @@
 import { Shield, MapPin, Award, Users } from "lucide-react";
 import { SectionLabel } from "../components/common/SectionLabel";
-import { useLanguage } from "../lib/i18n";
+import { useLanguage } from "../context/i18n";
 
 const stats = [
   { label: "Vehicles in Fleet", value: "50+" },

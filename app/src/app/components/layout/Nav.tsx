@@ -4,10 +4,10 @@ import { Menu, X } from "lucide-react";
 import { ROUTES } from "../../routes";
 import { PrimaryBtn } from "../common/PrimaryBtn";
 import { GhostBtn } from "../common/GhostBtn";
-import { managementSignInUrl } from "../../lib/management";
+import { managementSignInUrl } from "../../api/management";
 import { ThemeToggle } from "../common/ThemeToggle";
 import { LanguageToggle } from "../common/LanguageToggle";
-import { useLanguage } from "../../lib/i18n";
+import { useLanguage } from "../../context/i18n";
 
 export function Nav() {
   const [menuOpen, setMenuOpen] = useState(false);

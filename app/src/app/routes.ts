@@ -3,7 +3,7 @@ import type { FleetCategory } from "./types";
 // Central route path map — keep Nav, Footer, and links in sync from one place.
 // This is a marketing site only: there's no internal booking, sign-in, or
 // account route here. Those live on the separate management system —
-// see lib/management.ts for the outbound links that send customers there.
+// see api/management.ts for the outbound links that send customers there.
 export const ROUTES = {
   home: "/",
   fleet: "/fleet",

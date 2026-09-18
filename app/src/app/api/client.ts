@@ -52,7 +52,7 @@ function toTestimonial(doc: WithMongoId<Testimonial>): Testimonial {
 // ─── Public API ──────────────────────────────────────────────────────────────
 // This site is a marketing/informational catalog only. Actual bookings,
 // accounts, and admin functions live in the separate management system —
-// see lib/management.ts for the outbound links that send customers there.
+// see api/management.ts for the outbound links that send customers there.
 
 export async function fetchVehicles(category?: FleetCategory): Promise<Vehicle[]> {
   const query = category && category !== "all" ? `?category=${category}` : "";

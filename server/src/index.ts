@@ -8,9 +8,10 @@ import { testimonialsRouter } from "./routes/testimonials.js";
 import { leadsRouter } from "./routes/leads.js";
 
 // This server is the content API for the VistaRent marketing site only —
-// it serves the vehicle catalog, FAQs, and testimonials shown on the site.
-// Bookings, accounts, and admin functions live in the separate management
-// system, so there's intentionally no auth or bookings API here.
+// it serves the vehicle catalog, FAQs, and testimonials shown on the site,
+// plus corporate quote enquiries (leads). Bookings, accounts, and admin
+// functions live in a separate management system, so there is intentionally
+// no auth or bookings API here.
 
 const PORT = Number(process.env.PORT ?? 4000);
 const MONGODB_URI = process.env.MONGODB_URI ?? "mongodb://127.0.0.1:27017/vistarent";

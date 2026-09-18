@@ -1,7 +1,7 @@
 import { Link } from "react-router";
 import { ROUTES, locationPath } from "../../routes";
 import { locations } from "../../data/locations";
-import { useLanguage } from "../../lib/i18n";
+import { useLanguage } from "../../context/i18n";
 
 export function Footer() {
   const { t } = useLanguage();

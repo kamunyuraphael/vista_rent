@@ -3,7 +3,7 @@ import { ChevronDown, Mail, MapPin, Phone } from "lucide-react";
 import type { Faq } from "../data/faqs";
 import { SectionLabel } from "../components/common/SectionLabel";
 import { JsonLd } from "../components/common/JsonLd";
-import { useLanguage } from "../lib/i18n";
+import { useLanguage } from "../context/i18n";
 
 export function FaqPage({ faqs: faqList }: { faqs: Faq[] }) {
   const [openFaq, setOpenFaq] = useState<number | null>(null);

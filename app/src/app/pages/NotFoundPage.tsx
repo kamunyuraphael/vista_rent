@@ -2,7 +2,7 @@ import { Link } from "react-router";
 import { Compass } from "lucide-react";
 import { ROUTES } from "../routes";
 import { PrimaryBtn } from "../components/common/PrimaryBtn";
-import { useLanguage } from "../lib/i18n";
+import { useLanguage } from "../context/i18n";
 
 export function NotFoundPage() {
   const { t } = useLanguage();

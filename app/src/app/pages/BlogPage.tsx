@@ -2,7 +2,7 @@ import { Link } from "react-router";
 import { blogPosts } from "../data/blog";
 import { blogPostPath } from "../routes";
 import { SectionLabel } from "../components/common/SectionLabel";
-import { useLanguage } from "../lib/i18n";
+import { useLanguage } from "../context/i18n";
 
 export function BlogPage() {
   const { t } = useLanguage();

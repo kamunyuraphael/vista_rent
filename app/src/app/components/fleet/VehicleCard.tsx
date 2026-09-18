@@ -1,10 +1,10 @@
 import { Settings2, Users, Zap, Package, Scale, Check } from "lucide-react";
 import type { Vehicle } from "../../data/vehicles";
 import { PrimaryBtn } from "../common/PrimaryBtn";
-import { srcSetFor, DEFAULT_SIZES } from "../../lib/images";
+import { srcSetFor, DEFAULT_SIZES } from "../../utils/images";
 import { detailPath } from "../../routes";
-import { useComparison } from "../../lib/comparison-context";
-import { useLanguage } from "../../lib/i18n";
+import { useComparison } from "../../context/comparison-context";
+import { useLanguage } from "../../context/i18n";
 import { Link } from "react-router";
 
 type VehicleCardProps = {

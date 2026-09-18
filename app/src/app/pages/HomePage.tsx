@@ -2,14 +2,14 @@ import { useState } from "react";
 import { Link } from "react-router";
 import { MapPin, Calendar, Users, ArrowRight, ChevronDown, Star, Shield, Zap, Clock, Settings2, Award } from "lucide-react";
 import { ROUTES } from "../routes";
-import { managementBookingUrl } from "../lib/management";
+import { managementBookingUrl } from "../api/management";
 import type { Vehicle } from "../data/vehicles";
 import type { Testimonial } from "../data/testimonials";
 import { PrimaryBtn } from "../components/common/PrimaryBtn";
 import { GhostBtn } from "../components/common/GhostBtn";
 import { SectionLabel } from "../components/common/SectionLabel";
 import { VehicleCard } from "../components/fleet/VehicleCard";
-import { useLanguage } from "../lib/i18n";
+import { useLanguage } from "../context/i18n";
 
 export function HomePage({
   vehicles,

@@ -1,8 +1,8 @@
 import { useState, type FormEvent } from "react";
 import { ArrowRight, Award, Briefcase, Check, Clock, Loader2, Users } from "lucide-react";
 import { ROUTES } from "../routes";
-import { createLead, ApiError } from "../lib/api";
-import { useLanguage } from "../lib/i18n";
+import { createLead, ApiError } from "../api/client";
+import { useLanguage } from "../context/i18n";
 import { PrimaryBtn } from "../components/common/PrimaryBtn";
 import { SectionLabel } from "../components/common/SectionLabel";
 

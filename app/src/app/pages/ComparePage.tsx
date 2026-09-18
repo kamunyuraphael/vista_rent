@@ -1,12 +1,12 @@
 import { Link } from "react-router";
 import { X } from "lucide-react";
 import type { Vehicle } from "../data/vehicles";
-import { useComparison } from "../lib/comparison-context";
-import { managementBookingUrl } from "../lib/management";
+import { useComparison } from "../context/comparison-context";
+import { managementBookingUrl } from "../api/management";
 import { ROUTES } from "../routes";
 import { SectionLabel } from "../components/common/SectionLabel";
 import { PrimaryBtn } from "../components/common/PrimaryBtn";
-import { useLanguage } from "../lib/i18n";
+import { useLanguage } from "../context/i18n";
 
 const specRows: { label: string; get: (v: Vehicle) => string }[] = [
   { label: "Category", get: (v) => v.category.toUpperCase() },

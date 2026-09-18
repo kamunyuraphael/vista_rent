@@ -1,6 +1,6 @@
 import { Link } from "react-router";
 import { X, Scale } from "lucide-react";
-import { useComparison } from "../../lib/comparison-context";
+import { useComparison } from "../../context/comparison-context";
 import { ROUTES } from "../../routes";
 
 export function CompareBar() {

@@ -3,7 +3,7 @@ import { MapPin, Phone, Clock, ArrowRight } from "lucide-react";
 import { locations } from "../data/locations";
 import { locationPath } from "../routes";
 import { SectionLabel } from "../components/common/SectionLabel";
-import { useLanguage } from "../lib/i18n";
+import { useLanguage } from "../context/i18n";
 
 export function LocationsPage() {
   const { t } = useLanguage();

@@ -2,10 +2,10 @@ import { useSearchParams } from "react-router";
 import { Shield, Headphones, Zap } from "lucide-react";
 import type { FleetCategory } from "../types";
 import type { Vehicle } from "../data/vehicles";
-import { managementBookingUrl } from "../lib/management";
+import { managementBookingUrl } from "../api/management";
 import { SectionLabel } from "../components/common/SectionLabel";
 import { VehicleCard } from "../components/fleet/VehicleCard";
-import { useLanguage } from "../lib/i18n";
+import { useLanguage } from "../context/i18n";
 
 const fleetTabs: { label: string; value: FleetCategory }[] = [
   { label: "All Vehicles", value: "all" },
